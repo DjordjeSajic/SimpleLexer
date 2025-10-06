@@ -13,5 +13,7 @@ lex.yy.c:lexer.l parser.tab.h
 parser.tab.c parser.tab.h: parser.y
 	bison -d -v parser.y
 
+.PHONY: clean
+
 clean:
 	rm -rf *.output  *.tab.* *.o *.yy.* parser
